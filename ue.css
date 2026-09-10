@@ -21,11 +21,6 @@ body { background: var(--bg-0); min-height: 100vh; }
 .ue-mini-links a { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--text-2); text-decoration: none; transition: color .2s; }
 .ue-mini-links a:hover { color: var(--text-0); }
 
-/* === Curseur natif rétabli sur les pages UE ===
-   L'index utilise un curseur custom (cursor-dot + cursor-ring) piloté par JS,
-   et masque le curseur système (`cursor: none`). Les pages UE ne chargent pas
-   ce JS, donc on rétablit le curseur du système et on cache, par sécurité,
-   d'éventuels résidus DOM de l'effet custom. */
 html, body { cursor: auto !important; }
 a, button, [role="button"], input, textarea, select, label { cursor: pointer !important; }
 input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea { cursor: text !important; }
